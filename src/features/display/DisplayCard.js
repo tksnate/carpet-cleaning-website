@@ -8,7 +8,7 @@ const DisplayCard = ({ item }) => {
       <CardImg src={image} alt={name} />
       <CardBody>
         <CardTitle>{name}</CardTitle>
-        <CardBody>{description}</CardBody>
+        <CardText>{description}</CardText>
       </CardBody>
     </Card>
   );
