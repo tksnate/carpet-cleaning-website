@@ -1,6 +1,7 @@
 import { useState } from "react";
 import {
   Navbar,
+  NavbarText,
   NavbarBrand,
   Collapse,
   NavbarToggler,
@@ -8,39 +9,42 @@ import {
   NavItem,
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
-import NucampLogo from "../app/assets/img/logo.png";
+import ValleysBestLogo from "../app/assets/img/logo.png";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <Navbar dark color="primary" sticky="top" expand="md">
-      <NavbarBrand className="ms-5" href="/">
-        <img src={NucampLogo} alt="nucamp logo" className="float-start" />
-        <h1 className="mt-1">NuCamp</h1>
+      <NavbarBrand className="ms-3" href="/">
+        <h1 className="mt-1">Valley's Best Carpet Cleaning</h1>
+        <small className="ms-2 navContact">
+          <strong className="text-dark">CALL:</strong> 602-699-4822
+          <strong className="navColor"> TEXT:</strong> 623-277-6461
+        </small>
       </NavbarBrand>
 
       <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
       <Collapse isOpen={menuOpen} navbar>
-        <Nav className="ms-auto" navbar>
+        <Nav className="ms-auto pe-3" navbar>
           <NavItem>
-            <NavLink className="nav-link" to="/">
-              <i className="fa fa-home fa-lg" /> Home
+            <NavLink className="nav-link text-dark" to="/">
+              Home
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className="nav-link" to="/directory">
-              <i className="fa fa-list fa-lg" /> Directory
+            <NavLink className="nav-link text-dark" to="/directory">
+              Services
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className="nav-link" to="/about">
-              <i className="fa fa-info fa-lg" /> About
+            <NavLink className="nav-link text-dark" to="/about">
+              About
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className="nav-link" to="/contact">
-              <i className="fa fa-address-card fa-lg" /> Contact
+            <NavLink className="nav-link text-dark" to="/contact">
+              Contact
             </NavLink>
           </NavItem>
         </Nav>

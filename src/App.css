@@ -30,7 +30,8 @@ h2 {
 }
 
 .site-footer {
-  background-image: linear-gradient(#cec8ff, white);
+  /*background-image: linear-gradient(#cec8ff, white);*/
+  background-image: linear-gradient(#2874a6, #aed6f1);
   padding: 20px 0;
   margin-top: 2rem;
 }
@@ -48,10 +49,11 @@ h2 {
 }
 
 .navbar-dark {
-  background-color: #901cad;
-  background-image: linear-gradient(to right, #5637dd, #3046c5, #510e5a);
+  background-color: #3046c5;
+  background-image: linear-gradient(to right, #21618c, #2e86c1, #85c1e9);
+  /*#00c6ff, #0072ff, #3406c5*/
   margin-bottom: 2rem;
-  min-height: 8rem;
+  min-height: 7rem;
 }
 
 .page-enter {
@@ -72,4 +74,12 @@ h2 {
 .page-exit-active {
   opacity: 0;
   transition: 300ms ease-in;
+}
+
+.navContact {
+  font-size: 0.9rem;
+}
+
+.navColor {
+  color: #ec7063;
 }
