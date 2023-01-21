@@ -1,7 +1,6 @@
 import { useState } from "react";
 import {
   Navbar,
-  NavbarText,
   NavbarBrand,
   Collapse,
   NavbarToggler,
@@ -9,18 +8,22 @@ import {
   NavItem,
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
-import ValleysBestLogo from "../app/assets/img/logo.png";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <Navbar dark color="primary" sticky="top" expand="md">
-      <NavbarBrand className="ms-3" href="/">
+      <NavbarBrand className="ms-4" href="/">
         <h1 className="mt-1">Valley's Best Carpet Cleaning</h1>
-        <small className="ms-2 navContact">
-          <strong className="text-dark">CALL:</strong> 602-699-4822
-          <strong className="navColor"> TEXT:</strong> 623-277-6461
+        <small className="navContact">
+          <a
+            role="button"
+            className="btn btn-link text-warning"
+            href="mailto:info@valleysbestcleaners.com"
+          >
+            Get Your Carpet Cleaning Quote Today!
+          </a>
         </small>
       </NavbarBrand>
 
@@ -28,22 +31,22 @@ const Header = () => {
       <Collapse isOpen={menuOpen} navbar>
         <Nav className="ms-auto pe-3" navbar>
           <NavItem>
-            <NavLink className="nav-link text-dark" to="/">
+            <NavLink className="nav-link" to="/">
               Home
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className="nav-link text-dark" to="/directory">
+            <NavLink className="nav-link" to="/directory">
               Services
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className="nav-link text-dark" to="/about">
+            <NavLink className="nav-link" to="/about">
               About
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className="nav-link text-dark" to="/contact">
+            <NavLink className="nav-link" to="/contact">
               Contact
             </NavLink>
           </NavItem>
