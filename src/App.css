@@ -15,7 +15,7 @@ h3,
 }
 
 h2 {
-  color: #3046c5;
+  color: #0046be;
 }
 
 .card-img-overlay .card-title {
@@ -31,7 +31,7 @@ h2 {
 
 .site-footer {
   /*background-image: linear-gradient(#cec8ff, white);*/
-  background-image: linear-gradient(#0046be, #aed6f1);
+  background-image: linear-gradient(to right, #013ebd, #0062da, #0b87fb);
   padding: 20px 0;
   margin-top: 2rem;
 }
@@ -49,9 +49,9 @@ h2 {
 }
 
 .navbar-dark {
-  background-color: #3046c5;
-  background-image: linear-gradient(to right, #0046be, #2e86c1, #3046c5);
-  /*#00c6ff, #0072ff, #3406c5, #0046be, light #85c1e9, dark #21618c*/
+  /* background-color: #3046c5;*/
+  background-image: linear-gradient(to right, #013ebd, #0062da, #0b87fb);
+  /*(to right, #0046be, #013ebd)*/
   margin-bottom: 2rem;
   min-height: 7rem;
 }
@@ -80,7 +80,8 @@ h2 {
   font-size: 0.8rem;
 }
 
+/*
 .navColor {
-  /* color: #ec7063*/
   color: #ffe000;
 }
+*/

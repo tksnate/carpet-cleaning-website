@@ -6,62 +6,86 @@ const Footer = () => {
     <footer className="site-footer">
       <Container>
         <Row>
-          <Col xs={{ size: 4, offset: 1 }} sm="2">
+          <Col xs="12" sm="4" className="text-center mb-5">
+            <h4 className="text-white">Valley's Best Carpet Cleaning</h4>
+            <small>
+              Professional Cleaning Services in Glendale, AZ and most
+              surrounding cities of Phoenix, AZ.
+            </small>
+            <br />
+            <br />
+            <small className="text-white">
+              Valley's Best Home Services Network Service Provider.
+            </small>
+            <br />
+            <small>
+              Copyright 2023. All Rights Reserved.
+              <Link to="/" className="text-white">
+                {"  "}
+                Privacy Policy
+              </Link>
+            </small>
+          </Col>
+          <Col
+            className="text-white text-center"
+            xs={{ size: 8, offset: 2 }}
+            sm={{ size: 3, offset: 1 }}
+          >
             <h5>Links</h5>
             <ul className="list-unstyled">
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/" className="text-warning">
+                  Home
+                </Link>
               </li>
               <li>
-                <Link to="/directory">Directory</Link>
+                <Link to="/directory" className="text-warning">
+                  Services
+                </Link>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <Link to="/about" className="text-warning">
+                  About
+                </Link>
               </li>
               <li>
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact" className="text-warning">
+                  Contact
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-warning">
+                  Book Online
+                </Link>
               </li>
             </ul>
-          </Col>
-          <Col xs="6" sm="3" className="text-center">
-            <h5>Social</h5>
             <a
-              className="btn btn-social-icon btn-instagram"
-              href="http://instagram.com/"
+              role="button"
+              className="btn btn-link text-warning"
+              href="tel:+6026994822"
             >
-              <i className="fa fa-instagram" />
-            </a>{" "}
-            <a
-              className="btn btn-social-icon btn-facebook"
-              href="http://www.facebook.com/"
-            >
-              <i className="fa fa-facebook" />
-            </a>{" "}
-            <a
-              className="btn btn-social-icon btn-twitter"
-              href="http://twitter.com/"
-            >
-              <i className="fa fa-twitter" />
-            </a>{" "}
-            <a
-              className="btn btn-social-icon btn-google"
-              href="http://youtube.com/"
-            >
-              <i className="fa fa-youtube" />
-            </a>
-          </Col>
-          <Col sm="4" className="text-center">
-            <a role="button" className="btn btn-link" href="tel:+12065551234">
-              <i className="fa fa-phone" /> 1-206-555-1234
+              <i className="fa fa-phone" /> 602-699-4822
             </a>
             <br />
             <a
               role="button"
-              className="btn btn-link"
-              href="mailto:notreal@notreal.co"
+              className="btn btn-link text-warning"
+              href="mailto:info@valleysbestcleaners.com"
             >
-              <i className="fa fa-envelope-o" /> campsites@nucamp.co
+              <i className="fa fa-envelope-o" /> Email Us
             </a>
+          </Col>
+          <Col sm={{ size: 3, offset: 1 }} className="text-center">
+            <Link to="/contact" className="text-warning">
+              Schedule Service
+            </Link>
+            <br />
+            <br />
+            <small className="text-white">
+              Cleaning Service Area: Glendale, AZ, Peoria, AZ, Surprise, AZ, Sun
+              City, AZ, Litchfield, AZ, Goodyear, AZ, Tempe, AZ, Scottsdale, AZ,
+              Mesa, AZ, and most surrounding cities of Phoenix, AZ.
+            </small>
           </Col>
         </Row>
       </Container>
