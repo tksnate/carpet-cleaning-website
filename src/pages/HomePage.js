@@ -9,17 +9,14 @@ const HomePage = () => {
     <Container>
       <Row>
         <Col>
-          <Card>
-            <CardImg
-              top
-              width="100%"
-              src={hero}
-              alt="Carpet Cleaning Glendale, AZ"
-            />
-          </Card>
+          <img
+            src={hero}
+            className="paral"
+            alt="Carpet Cleaning Glendale, AZ"
+          />
         </Col>
       </Row>
-      <Row className="row-content">
+      <Row className="row-content paralHead">
         <Col>
           <h1>
             Professional Carpet Cleaning Services in Glendale, AZ and all

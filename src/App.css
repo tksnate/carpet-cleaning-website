@@ -1,12 +1,13 @@
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
+  height: 100%;
 }
 
 h1,
 h2,
 h3,
 .card-body > .card-title {
-  font-family: "Lobster", cursive;
+  font-family: "Alegreya", serif;
 }
 
 .card-title {
@@ -16,6 +17,10 @@ h3,
 
 h2 {
   color: #0046be;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .card-img-overlay .card-title {
@@ -52,7 +57,6 @@ h2 {
   /* background-color: #3046c5;*/
   background-image: linear-gradient(to right, #013ebd, #0062da, #0b87fb);
   /*(to right, #0046be, #013ebd)*/
-  margin-bottom: 2rem;
   min-height: 7rem;
 }
 
@@ -80,8 +84,22 @@ h2 {
   font-size: 0.8rem;
 }
 
-/*
-.navColor {
-  color: #ffe000;
+.paral {
+  width: 100vw;
+  position: fixed;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  min-height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-image: url(../src/app/assets/img/hero.jpg);*/
 }
-*/
+
+.paralHead {
+  position: relative;
+  padding-top: 700px;
+}

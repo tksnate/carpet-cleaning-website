@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <Navbar dark color="primary" sticky="top" expand="md">
       <NavbarBrand className="ms-4" href="/">
-        <h1 className="mt-1">Valley's Best Carpet Cleaning</h1>
+        <h2 className="bold text-white">Valley's Best Carpet Cleaning</h2>
         <small className="navContact">
           <a
             role="button"
