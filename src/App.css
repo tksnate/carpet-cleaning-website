@@ -103,3 +103,14 @@ h2 {
   position: relative;
   padding-top: 700px;
 }
+
+.image-parallax {
+  position: relative;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}

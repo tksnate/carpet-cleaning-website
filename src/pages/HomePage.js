@@ -1,13 +1,14 @@
 import { Container, Col, Row, Card, CardImg } from "reactstrap";
 import DisplayList from "../features/display/DisplayList";
 import hero from "../app/assets/img/hero.jpg";
-import coupon from "../app/assets/img/carpet-cleaning-coupon.png";
 import coupon2 from "../app/assets/img/carpet-cleaning-coupon.jpg";
+import ImageParallax from "../features/display/heroParallax";
 
 const HomePage = () => {
   return (
     <Container>
-      <Row>
+      <ImageParallax />
+      {/* <Row>
         <Col>
           <img
             src={hero}
@@ -15,7 +16,7 @@ const HomePage = () => {
             alt="Carpet Cleaning Glendale, AZ"
           />
         </Col>
-      </Row>
+      </Row> */}
       <Row className="row-content paralHead">
         <Col>
           <h1>

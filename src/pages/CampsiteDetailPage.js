@@ -14,7 +14,7 @@ const CampsiteDetailPage = () => {
       <SubHeader current={campsite.name} detail={true} />
       <Row>
         <CampsiteDetail campsite={campsite} />
-        <CommentsList campsiteId={campsiteId} />
+        {/* <CommentsList campsiteId={campsiteId} /> */}
       </Row>
     </Container>
   );
