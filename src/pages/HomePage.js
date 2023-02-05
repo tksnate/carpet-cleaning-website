@@ -1,23 +1,22 @@
 import { Container, Col, Row, Card, CardImg } from "reactstrap";
 import DisplayList from "../features/display/DisplayList";
-import hero from "../app/assets/img/hero.jpg";
+
 import coupon2 from "../app/assets/img/carpet-cleaning-coupon.jpg";
 import ImageParallax from "../features/display/heroParallax";
+import ImageParallaxTwo from "../features/display/heroParallaxTwo";
+import ImageParallaxThree from "../features/display/heroParallaxThree";
+import TextBox from "../components/TextBox";
+import TextBoxTwo from "../components/TextBoxTwo";
 
 const HomePage = () => {
   return (
     <Container>
       <ImageParallax />
-      {/* <Row>
-        <Col>
-          <img
-            src={hero}
-            className="paral"
-            alt="Carpet Cleaning Glendale, AZ"
-          />
-        </Col>
-      </Row> */}
-      <Row className="row-content paralHead">
+      <TextBox />
+      <ImageParallaxThree />
+      <TextBoxTwo />
+      <ImageParallaxTwo />
+      {/* <Row className="row-content paralHead">
         <Col>
           <h1>
             Professional Carpet Cleaning Services in Glendale, AZ and all
@@ -65,7 +64,7 @@ const HomePage = () => {
           </ul>
         </Col>
       </Row>
-      <DisplayList />
+      <DisplayList /> */}
     </Container>
   );
 };

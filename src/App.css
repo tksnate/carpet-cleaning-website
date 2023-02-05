@@ -101,16 +101,43 @@ h2 {
 
 .paralHead {
   position: relative;
-  padding-top: 700px;
 }
 
 .image-parallax {
   position: relative;
-  height: 100vh;
+  min-height: 75vw;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 
 .content {
   display: flex;
-  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 800vh;
   width: 100%;
+}
+
+.content span.img-text {
+  background-color: #333;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 10px;
+}
+
+.homeText {
+  text-align: center;
+  text-align: justify;
+  padding: 3rem 1rem;
+}
+
+.homeTextTwo {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
