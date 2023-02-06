@@ -1,13 +1,9 @@
-import reactLakeImg from "../assets/img/react-lake.jpg";
-import chromeRiverImg from "../assets/img/chrome-river.jpg";
-import breadCrumbImg from "../assets/img/breadcrumb-trail.jpg";
-import reduxWoodsImg from "../assets/img/redux-woods.jpg";
 import housecleaning from "../assets/img/house-cleaning.jpg";
 import moveout from "../assets/img/move-out.jpg";
 import carpetcleaning from "../assets/img/carpet-cleaning.jpg";
 import tilecleaning from "../assets/img/tile-cleaning.jpg";
 
-export const CAMPSITES = [
+export const SERVICES = [
   {
     id: 0,
     name: "Carpet Cleaning",

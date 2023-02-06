@@ -1,11 +1,11 @@
 import { Container, Row } from "reactstrap";
 import { useParams } from "react-router-dom";
-import { selectCampsiteById } from "../features/campsites/campsitesSlice";
-import CampsiteDetail from "../features/campsites/CampsiteDetail";
+import { selectCampsiteById } from "../features/services/servicesSlice";
+import ServiceDetail from "../features/services/ServiceDetail";
 import CommentsList from "../features/comments/CommentsList";
 import SubHeader from "../components/SubHeader";
 
-const CampsiteDetailPage = () => {
+const ServiceDetailPage = () => {
   const { campsiteId } = useParams();
   const campsite = selectCampsiteById(campsiteId);
 
@@ -13,11 +13,11 @@ const CampsiteDetailPage = () => {
     <Container>
       <SubHeader current={campsite.name} detail={true} />
       <Row>
-        <CampsiteDetail campsite={campsite} />
+        <ServiceDetail campsite={campsite} />
         {/* <CommentsList campsiteId={campsiteId} /> */}
       </Row>
     </Container>
   );
 };
 
-export default CampsiteDetailPage;
+export default ServiceDetailPage;

@@ -1,5 +1,5 @@
 import { Parallax } from "react-parallax";
-import carpetClean from "../../app/assets/img/carpet-cleaning-az.jpg";
+import carpetClean from "../../app/assets/img/1920c.jpg";
 
 const ImageParallaxTwo = () => {
   return (
@@ -7,7 +7,7 @@ const ImageParallaxTwo = () => {
       className="image-parallax"
       bgImage={carpetClean}
       bgImageAlt="carpet cleaning services phoenix az"
-      strength={500}
+      strength={400}
     ></Parallax>
   );
 };

@@ -1,8 +1,8 @@
 import { Col, Row } from "reactstrap";
-import CampsiteCard from "./CampsiteCard";
-import { selectAllCampsites } from "./campsitesSlice";
+import ServiceCard from "./ServiceCard";
+import { selectAllCampsites } from "./servicesSlice";
 
-const CampsitesList = () => {
+const ServicesList = () => {
   const campsites = selectAllCampsites();
 
   return (
@@ -10,7 +10,7 @@ const CampsitesList = () => {
       {campsites.map((campsite) => {
         return (
           <Col md="5" className="m-4" key={campsite.id}>
-            <CampsiteCard campsite={campsite} />
+            <ServiceCard campsite={campsite} />
           </Col>
         );
       })}
@@ -18,4 +18,4 @@ const CampsitesList = () => {
   );
 };
 
-export default CampsitesList;
+export default ServicesList;

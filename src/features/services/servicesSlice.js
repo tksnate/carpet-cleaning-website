@@ -1,7 +1,7 @@
-import { CAMPSITES } from "../../app/shared/CAMPSITES";
+import { SERVICES } from "../../app/shared/SERVICES";
 
 export const selectAllCampsites = () => {
-  return CAMPSITES;
+  return SERVICES;
 };
 
 // export const selectRandomCampsite = () => {
@@ -12,9 +12,9 @@ export const selectAllCampsites = () => {
 // };
 
 export const selectCampsiteById = (id) => {
-  return CAMPSITES.find((campsite) => campsite.id === parseInt(id));
+  return SERVICES.find((campsite) => campsite.id === parseInt(id));
 };
 
 export const selectFeaturedCampsite = () => {
-  return CAMPSITES.find((campsite) => campsite.featured);
+  return SERVICES.find((campsite) => campsite.featured);
 };

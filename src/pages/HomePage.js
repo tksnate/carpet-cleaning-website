@@ -10,11 +10,11 @@ import TextBoxTwo from "../components/TextBoxTwo";
 
 const HomePage = () => {
   return (
-    <Container>
+    <Container className="homePage">
       <ImageParallax />
       <TextBox />
       <ImageParallaxThree />
-      <TextBoxTwo />
+      {/* <TextBoxTwo /> */}
       <ImageParallaxTwo />
       {/* <Row className="row-content paralHead">
         <Col>

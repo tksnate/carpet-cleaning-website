@@ -1,14 +1,14 @@
 import { Container } from "reactstrap";
-import CampsitesList from "../features/campsites/CampsitesList";
+import ServicesList from "../features/services/ServicesList";
 import SubHeader from "../components/SubHeader";
 
-const CampsitesDirectoryPage = () => {
+const ServicesDirectoryPage = () => {
   return (
     <Container>
       <SubHeader current="Services" />
-      <CampsitesList />
+      <ServicesList />
     </Container>
   );
 };
 
-export default CampsitesDirectoryPage;
+export default ServicesDirectoryPage;
