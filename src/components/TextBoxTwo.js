@@ -1,31 +1,35 @@
 import React from "react";
-import { Col, Row, Card, CardImg } from "reactstrap";
-import coupon2 from "../app/assets/img/carpet-cleaning-coupon.jpg";
+import {
+  Col,
+  Row,
+  Card,
+  CardImg,
+  CardHeader,
+  CardTitle,
+  CardFooter,
+} from "reactstrap";
+import googleReview from "../app/assets/img/google5.png";
 
 const TextBoxTwo = () => {
   return (
     <Row className="homeTextTwo">
-      <Col sm="6">
-        <h2>
-          You can't have a beautiful and healthy home without clean carpet!
-        </h2>
-        <ul>
-          <li>Experienced Professionals</li>
-          <li>Accredited & Insured</li>
-          <li>Affordable Prices</li>
-          <li>Reliable Service</li>
-          <li>No Hidden Fees</li>
-          <li>Hundreds of 5-Star Reviews</li>
-        </ul>
-      </Col>
-      <Col sm="6">
+      <Col sm="4">
         <Card>
           <CardImg
             top
             width="100%"
-            src={coupon2}
+            src={googleReview}
             alt="Carpet Cleaning Coupon Discount Phoenix, AZ"
           />
+        </Card>
+      </Col>
+      <Col sm="8">
+        <Card>
+          <CardHeader>5-Star Review</CardHeader>
+          <CardTitle>
+            "I highly recommend Valley's Best Carpet Cleaning!"
+          </CardTitle>
+          <CardFooter>- Matt R. 5-Star Customer Review on Google</CardFooter>
         </Card>
       </Col>
     </Row>

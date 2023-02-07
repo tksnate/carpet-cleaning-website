@@ -1,7 +1,5 @@
 import { Container, Col, Row, Card, CardImg } from "reactstrap";
-import DisplayList from "../features/display/DisplayList";
 
-import coupon2 from "../app/assets/img/carpet-cleaning-coupon.jpg";
 import ImageParallax from "../features/display/heroParallax";
 import ImageParallaxTwo from "../features/display/heroParallaxTwo";
 import ImageParallaxThree from "../features/display/heroParallaxThree";
@@ -14,7 +12,7 @@ const HomePage = () => {
       <ImageParallax />
       <TextBox />
       <ImageParallaxThree />
-      {/* <TextBoxTwo /> */}
+      <TextBoxTwo />
       <ImageParallaxTwo />
       {/* <Row className="row-content paralHead">
         <Col>
