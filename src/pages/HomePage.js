@@ -1,5 +1,4 @@
 import { Container, Col, Row, Card, CardImg } from "reactstrap";
-
 import ImageParallax from "../features/display/heroParallax";
 import ImageParallaxTwo from "../features/display/heroParallaxTwo";
 import ImageParallaxThree from "../features/display/heroParallaxThree";

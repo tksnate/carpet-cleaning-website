@@ -1,5 +1,6 @@
 body {
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
+  font-family: "Roboto", sans-serif;
   height: 100%;
 }
 
@@ -7,7 +8,8 @@ h1,
 h2,
 h3,
 .card-body > .card-title {
-  font-family: "Alegreya", serif;
+  /* font-family: "Alegreya", serif; */
+  font-family: "Roboto", sans-serif;
 }
 
 .card-title {
@@ -42,8 +44,15 @@ h2 {
 }
 
 .navbar-brand {
-  max-width: 4rem;
+  /* max-width: 4rem; */
   margin-right: 2rem;
+}
+
+.navItem {
+  /* font-family: "Alegreya", serif; */
+  /* font-style: italic; */
+  /* color: yellow; */
+  font-size: 1.5rem;
 }
 
 .navbar-brand img {
@@ -57,7 +66,14 @@ h2 {
   /* background-color: #3046c5;*/
   background-image: linear-gradient(to right, #013ebd, #0062da, #0b87fb);
   /*(to right, #0046be, #013ebd)*/
-  min-height: 7rem;
+  min-height: 5rem;
+}
+
+.navbar a {
+  /* margin-left: 0; */
+  /* margin-right: 0; */
+  padding-left: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 .page-enter {
@@ -114,21 +130,41 @@ h2 {
   margin-right: -50vw;
 }
 
-.content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  /* height: 100vh;
-  width: 100%; */
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 15px;
+@media (min-width: 768px) {
+  .content {
+    display: flex;
+
+    /* position: absolute; */
+    /* height: 50vh; */
+    /* width: 100%; */
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 275px;
+    margin-bottom: 25px;
+    /* justify-content: center;
+  align-items: center; */
+  }
+}
+
+@media (max-width: 767px) {
+  .content {
+    display: flex;
+
+    /* position: absolute; */
+    /* height: 50vh; */
+    /* width: 100%; */
+    margin-top: 55px;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* margin-bottom: 50px; */
+    /* justify-content: center;
+    align-items: center; */
+  }
 }
 
 .img-txt {
-  padding: 2rem;
   color: white;
+  justify-content: center;
 }
 
 .homeText {
@@ -140,8 +176,4 @@ h2 {
 .homeTextTwo {
   padding-top: 10px;
   padding-bottom: 15px;
-}
-
-.homePage {
-  /* background-color: lightgray; */
 }

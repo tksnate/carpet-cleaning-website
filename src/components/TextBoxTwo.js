@@ -1,4 +1,5 @@
 import React from "react";
+import Bootstrap from "bootstrap";
 import {
   Col,
   Row,
@@ -16,10 +17,9 @@ const TextBoxTwo = () => {
       <Col sm="4">
         <Card>
           <CardImg
-            top
-            width="100%"
+            max-width="25%"
             src={googleReview}
-            alt="Carpet Cleaning Coupon Discount Phoenix, AZ"
+            alt="5-Star Customer Review of Cleaning Company"
           />
         </Card>
       </Col>
