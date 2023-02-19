@@ -17,16 +17,11 @@ const Header = () => {
     <>
       <Navbar dark color="primary" sticky="top" expand="md">
         <NavbarBrand href="/">
-          <span className="navItem">Valley's Best Carpet Cleaning</span>
+          <span className="navItem">VALLEY'S BEST CARPET CLEANING</span>
         </NavbarBrand>
         <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
         <Collapse isOpen={menuOpen} navbar>
-          <Nav className="ms-auto pe-3 NavbarText" navbar>
-            <NavItem>
-              <NavLink className="nav-link" to="/">
-                Home
-              </NavLink>
-            </NavItem>
+          <Nav className="ms-auto pe-3" navbar>
             <NavItem>
               <NavLink className="nav-link" to="/directory">
                 Services

@@ -82,9 +82,10 @@ const Footer = () => {
             <br />
             <br />
             <small className="text-white">
-              Cleaning Service Area: Glendale, AZ, Peoria, AZ, Surprise, AZ, Sun
-              City, AZ, Litchfield, AZ, Goodyear, AZ, Tempe, AZ, Scottsdale, AZ,
-              Mesa, AZ, and most surrounding cities of Phoenix, AZ.
+              <span className="bold">Cleaning Service Area:</span> Glendale, AZ,
+              Peoria, AZ, Surprise, AZ, Sun City, AZ, Litchfield, AZ, Goodyear,
+              AZ, Tempe, AZ, Scottsdale, AZ, Mesa, AZ, and most surrounding
+              cities of Phoenix, AZ.
             </small>
           </Col>
         </Row>

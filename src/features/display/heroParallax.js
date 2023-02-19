@@ -1,7 +1,9 @@
 import { Parallax } from "react-parallax";
 import hero from "../../app/assets/img/1920.jpg";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Button } from "reactstrap";
+import React from "react";
+import { Button, Tooltip } from "reactstrap";
+import ModalExample from "../quotes/CarpetCleaningQuote";
 
 const ImageParallax = () => {
   return (
@@ -17,9 +19,14 @@ const ImageParallax = () => {
             <h2 className="img-txt">
               Experienced Professionals. Affordable Prices.
             </h2>
-            <Button color="warning" href="contact">
+
+            {/* <Button color="warning" href="contact" id="TooltipExample">
               Get Carpet Cleaning Quote
-            </Button>
+            </Button> */}
+            {/* <Tooltip placement="right" target="TooltipExample">
+              $90 Special Offer
+            </Tooltip> */}
+            <ModalExample />
           </div>
         </div>
       </Parallax>
