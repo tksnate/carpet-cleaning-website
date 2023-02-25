@@ -10,8 +10,10 @@ const TextBox = () => {
           Carpet Cleaning & Stain Removal Services
         </h1>
         <h5 className="mb-4">
-          Cleaning in Phoenix, AZ, and most surrounding cities in the Valley of
-          the Sun!
+          Cleaning in Phoenix, AZ,{" "}
+          <a href="#cities" className="cityLink">
+            and most surrounding cities in the Valley of the Sun!
+          </a>
         </h5>
         <ul className="mb-4">
           <span className="listStyle text-primary">

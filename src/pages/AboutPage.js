@@ -8,24 +8,34 @@ const AboutPage = () => {
       <SubHeader current="About Us" />
       <Row className="row-content">
         <Col sm="6">
-          <h3>Our Mission</h3>
+          <h3>Why Choose Valley's Best Carpet Cleaning</h3>
           <p>
-            We present a curated database of the best campsites in the vast
-            woods and backcountry of the World Wide Web Wilderness. We increase
-            access to adventure for the public while promoting safe and
-            respectful use of resources. The expert wilderness trekkers on our
-            staff personally verify each campsite to make sure that they are up
-            to our standards. We also present a platform for campers to share
-            reviews on campsites they have visited with each other.
+            Affordable Residential & Commercial Cleaning Services in Phoenix,
+            AZ, and most surrounding cities. We are dedicated to customer
+            satisfaction and service offers for every situation!
           </p>
         </Col>
         <Col sm="6">
           <Card>
             <CardHeader className="bg-primary text-white">
-              <h3>Facts at a Glance</h3>
+              <h3>Our Promises</h3>
             </CardHeader>
             <CardBody>
-              <dl className="row">
+              <ul className="row">
+                <span className="listStyle text-primary">
+                  <li>We treat our customers as we want to be treated</li>
+                  <li>We will always operate with Honesty and Integrity</li>
+                  <li>We are committed to complete customer satisfaction!</li>
+                  <li>
+                    We honor your business by using only the best people to
+                    serve your cleaning needs. Our expert cleaning technicians
+                    are insured, dedicated, and experienced professionals. These
+                    superstars are the real reason you should choose Valley's
+                    Best Carpet Cleaning!
+                  </li>
+                </span>
+              </ul>
+              {/* <dl className="row">
                 <dt className="col-6">Founded</dt>
                 <dd className="col-6">February 3, 2016</dd>
                 <dt className="col-6">No. of Campsites in 2019</dt>
@@ -34,7 +44,7 @@ const AboutPage = () => {
                 <dd className="col-6">4388</dd>
                 <dt className="col-6">Employees</dt>
                 <dd className="col-6">42</dd>
-              </dl>
+              </dl> */}
             </CardBody>
           </Card>
         </Col>
@@ -43,13 +53,14 @@ const AboutPage = () => {
             <CardBody>
               <blockquote className="blockquote">
                 <p>
-                  I will not follow where the path may lead, but I will go where
-                  there is no path, and I will leave a trail.
+                  These guys are amazing! We had them do house cleaning AND
+                  carpet cleaning and now everything looks great! Very
+                  professional and affordable. Highly recommend.
                 </p>
                 <footer className="blockquote-footer">
-                  Muriel Strode,{" "}
+                  Maggie S,{" "}
                   <cite title="Source Title">
-                    "Wind-Wafted Wild Flowers" - The Open Court, 1903
+                    5-Star Google Customer Review
                   </cite>
                 </footer>
               </blockquote>

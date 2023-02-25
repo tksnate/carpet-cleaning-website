@@ -9,8 +9,8 @@ const Footer = () => {
           <Col xs="12" sm="4" className="text-center mb-5">
             <h4 className="text-white">Valley's Best Carpet Cleaning</h4>
             <small>
-              Professional Cleaning Services in Glendale, AZ and most
-              surrounding cities of Phoenix, AZ.
+              Professional Cleaning Services in Phoenix, AZ and most surrounding
+              cities of in the Valley of the Sun!
             </small>
             <br />
             <br />
@@ -82,10 +82,12 @@ const Footer = () => {
             <br />
             <br />
             <small className="text-white">
-              <span className="bold">Cleaning Service Area:</span> Glendale, AZ,
-              Peoria, AZ, Surprise, AZ, Sun City, AZ, Litchfield, AZ, Goodyear,
-              AZ, Tempe, AZ, Scottsdale, AZ, Mesa, AZ, and most surrounding
-              cities of Phoenix, AZ.
+              <span className="bold" id="cities">
+                Cleaning Service Area:
+              </span>{" "}
+              Glendale, AZ, Peoria, AZ, Surprise, AZ, Sun City, AZ, Litchfield,
+              AZ, Goodyear, AZ, Tempe, AZ, Scottsdale, AZ, Mesa, AZ, and most
+              surrounding cities of Phoenix, AZ.
             </small>
           </Col>
         </Row>
