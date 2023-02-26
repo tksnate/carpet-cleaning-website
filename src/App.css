@@ -141,25 +141,6 @@ h2 {
   }
 }
 
-@media (max-width: 767px) {
-  .content {
-    display: flex;
-
-    /* position: absolute; */
-    /* height: 50vh; */
-    /* width: 100%; */
-    margin-top: 55px;
-    margin-left: 20px;
-    margin-right: 20px;
-    /* margin-bottom: 50px; */
-    /* justify-content: center;
-    align-items: center; */
-  }
-  .navbar-brand img {
-    display: none;
-  }
-}
-
 .img-txt {
   color: white;
   justify-content: center;
@@ -183,4 +164,44 @@ h2 {
   font-weight: 500;
   line-height: 2em;
   /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
+}
+
+.listTwo {
+  line-height: 1.5em;
+  font-size: larger;
+}
+
+.checkMark {
+  font-size: x-large;
+  line-height: 2em;
+  color: darkred;
+}
+
+.checkMark ul {
+  list-style-type: none;
+}
+.checkMark ul:first-child li:before {
+  content: "\2714\0020";
+}
+
+@media (max-width: 767px) {
+  .content {
+    display: flex;
+
+    /* position: absolute; */
+    /* height: 50vh; */
+    /* width: 100%; */
+    margin-top: 55px;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* margin-bottom: 50px; */
+    /* justify-content: center;
+    align-items: center; */
+  }
+  .navbar-brand img {
+    display: none;
+  }
+  .checkMark {
+    font-size: large;
+  }
 }

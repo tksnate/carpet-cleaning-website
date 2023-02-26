@@ -5,7 +5,7 @@ import SubHeader from "../components/SubHeader";
 const ServicesDirectoryPage = () => {
   return (
     <Container>
-      <SubHeader current="Services" />
+      <SubHeader current="Services" curHead="Professional Cleaning Services" />
       <ServicesList />
     </Container>
   );
