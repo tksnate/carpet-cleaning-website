@@ -1,5 +1,6 @@
 import React from "react";
 import Bootstrap from "bootstrap";
+import { img } from "bootstrap";
 import {
   Col,
   Row,
@@ -11,27 +12,38 @@ import {
   CardFooter,
   CardText,
   Button,
+  Container,
 } from "reactstrap";
 import googleReview from "../app/assets/img/google5.png";
+import reviewPic from "../app/assets/img/gog5.png";
+import reviewPic2 from "../app/assets/img/gog500.png";
 
 const TextBoxTwo = () => {
   return (
     <Row className="homeTextTwo">
       <Col sm="4">
-        <Card>
+        <Container>
+          {/* <Card>
           <CardImg
             max-width="20%"
             src={googleReview}
             alt="5-Star Customer Review of Cleaning Company"
           />
-        </Card>
+        </Card> */}
+          <CardImg
+            src={reviewPic2}
+            alt="5-Star Customer Review of Cleaning Company"
+            className="reviewImage"
+            // max-width="50%"
+          />
+        </Container>
       </Col>
       <Col sm="8">
-        <Card>
+        <Card style={{ alignContent: "center" }}>
           {/* <CardHeader className="bold">
             Customer Testimonial - 5-Star Google Review
           </CardHeader> */}
-          <CardBody>
+          <CardBody style={{ alignItems: "center" }}>
             <CardText>
               <span className="gillFont">
                 "We use{" "}
