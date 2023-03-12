@@ -31,8 +31,8 @@ const TextBox = () => {
       <Col sm="6">
         <Card>
           <CardImg
-            top
             width="100%"
+            style={{ height: "auto" }}
             src={coupon2}
             alt="Carpet Cleaning Coupon Discount Phoenix, AZ"
           />

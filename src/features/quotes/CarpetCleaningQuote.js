@@ -34,9 +34,9 @@ class HeroModal extends React.Component {
             <ContactForm />
             You can also call or text us!
             <br />
-            <span className="bold">TEXT:</span> 623-277-6461
-            <br />
-            <span className="bold">CALL:</span> 602-699-4822
+            <span className="bold">TEXT: </span> 623-277-6461{" "}
+            <span>&nbsp;</span>&nbsp;&nbsp;
+            <span className="bold">CALL: </span> 602-699-4822
           </ModalBody>
         </Modal>
       </div>

@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import HeroModal from "../quotes/CarpetCleaningQuote";
 
-const ImageParallax = () => {
+const HeroParallax = () => {
   return (
     <>
       <Parallax
@@ -26,4 +26,4 @@ const ImageParallax = () => {
   );
 };
 
-export default ImageParallax;
+export default HeroParallax;

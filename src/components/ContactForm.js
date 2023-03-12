@@ -24,7 +24,7 @@ const ContactForm = () => {
     >
       <Form>
         <FormGroup row>
-          <Label htmlFor="name" md="2">
+          <Label htmlFor="name" md="2" hidden>
             Name
           </Label>
           <Col md="10">
@@ -35,7 +35,7 @@ const ContactForm = () => {
           </Col>
         </FormGroup>
         <FormGroup row>
-          <Label htmlFor="phoneNum" md="2">
+          <Label htmlFor="phoneNum" md="2" hidden>
             Phone
           </Label>
           <Col md="10">
@@ -50,7 +50,7 @@ const ContactForm = () => {
           </Col>
         </FormGroup>
         <FormGroup row>
-          <Label htmlFor="email" md="2">
+          <Label htmlFor="email" md="2" hidden>
             Email
           </Label>
           <Col md="10">
@@ -66,7 +66,7 @@ const ContactForm = () => {
           </Col>
         </FormGroup>
         <FormGroup row>
-          <Label htmlFor="when" md="2">
+          <Label htmlFor="when" md="2" hidden>
             When
           </Label>
           <Col md="10">
@@ -75,12 +75,12 @@ const ContactForm = () => {
               as="textarea"
               rows="2"
               className="form-control"
-              placeholder="When would you like us to perform the service?  Tell us the days & times that work best for you!"
+              placeholder="Date?  When would you like us to schedule service?  Tell us the days & times that work for you!"
             />
           </Col>
         </FormGroup>
         <FormGroup row>
-          <Label htmlFor="where" md="2">
+          <Label htmlFor="where" md="2" hidden>
             Where
           </Label>
           <Col md="10">
@@ -89,12 +89,12 @@ const ContactForm = () => {
               as="textarea"
               rows="2"
               className="form-control"
-              placeholder="Please tell us your service address and/or zip code"
+              placeholder="Address?  Please tell us your service address and/or zip code"
             />
           </Col>
         </FormGroup>
         <FormGroup row>
-          <Label htmlFor="quote" md="2">
+          <Label htmlFor="quote" md="2" hidden>
             Quote Details
           </Label>
           <Col md="10">
