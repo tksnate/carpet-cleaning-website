@@ -214,3 +214,10 @@ h2 {
     font-size: large;
   }
 }
+
+.customerTestomial {
+  min-width: 100;
+}
+.customerTest {
+  min-width: 300px;
+}
