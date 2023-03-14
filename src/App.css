@@ -107,7 +107,6 @@ h2 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-image: url(../src/app/assets/img/hero.jpg);*/
 }
 
 .paralHead {
@@ -123,22 +122,6 @@ h2 {
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-}
-
-@media (min-width: 768px) {
-  .content {
-    display: flex;
-
-    /* position: absolute; */
-    /* height: 50vh; */
-    /* width: 100%; */
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 275px;
-    margin-bottom: 25px;
-    /* justify-content: center;
-  align-items: center; */
-  }
 }
 
 .img-txt {
@@ -193,6 +176,16 @@ h2 {
   content: "\2714\0020";
 }
 
+@media (min-width: 768px) {
+  .content {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 275px;
+    margin-bottom: 25px;
+  }
+}
+
 @media (max-width: 767px) {
   .content {
     display: flex;
@@ -221,3 +214,8 @@ h2 {
 .customerTest {
   min-width: 300px;
 }
+
+/* .homeTextTwo {
+  margin-left: -10vw;
+  margin-right: -10vw;
+} */

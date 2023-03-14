@@ -19,16 +19,21 @@ const TextBoxThree = () => {
   return (
     <Row className="homeTextTwo">
       <div class="row">
-        <Col sm="4" className="ms-auto">
+        <Col sm="3" lg="3">
           <img
             src={reviewPic}
             alt="5-Star Customer Review of Cleaning Company"
-            style={{ width: "200px", display: "block", margin: "auto" }}
+            style={{
+              width: "200px",
+              display: "block",
+              margin: "auto",
+              paddingRight: "20px",
+            }}
           />
         </Col>
         <Col>
           <div class="customerTestomial">
-            <Card className="ms-5">
+            <Card className="ms-5 ps-1">
               <CardBody class="customerTest">
                 <CardText>
                   "We use{" "}
@@ -42,7 +47,7 @@ const TextBoxThree = () => {
                     {" "}
                     Carpet and tile look amazing. Would definitely recommend.
                   </span>{" "}
-                  We wil be using them again!!"
+                  We will be using them again!!"
                 </CardText>
                 <Button color="primary" href="contact">
                   Contact Us Today
