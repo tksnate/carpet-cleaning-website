@@ -5,14 +5,14 @@ import coupon2 from "../app/assets/img/carpet-cleaning-coupon.jpg";
 const TextBox = () => {
   return (
     <Row className="homeTextTwo">
-      <Col xs="12" className="text-center">
-        <h1 className="text-primary bold headLine">
+      <Col xs="12" className="text-center mb-4">
+        <h1 className="text-primary bold headLine fs-1">
           Carpet Cleaning & Stain Removal Services
         </h1>
       </Col>
       <Col sm="6">
         <ul className="mb-4">
-          <span className="listStyle text-primary">
+          <span className="listStyle">
             <li>Powerful Truck-Mounted Steam Cleaning</li>
             <li>Accredited & Insured</li>
             <li>Affordable & Reliable</li>
@@ -43,12 +43,10 @@ const TextBox = () => {
           />
         </Card> */}
       </Col>
-      <Col xs="12" className="text-center">
-        <h5 className="mb-4">
-          Cleaning in Phoenix, AZ,{" "}
-          <a href="#cities" className="cityLink">
-            and most surrounding cities in the Valley of the Sun!
-          </a>
+      <Col xs="12" className="text-center text-primary mt-4">
+        <h5 className="mx-2 mb-4">
+          Professional Cleaning Services in Phoenix, AZ, and most surrounding
+          cities in the Valley of the Sun!
         </h5>
       </Col>
     </Row>
