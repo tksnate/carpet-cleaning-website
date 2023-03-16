@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import ContactForm from "../../components/ContactForm";
 
-class HeroModal extends React.Component {
+class CarpetCleaningQuote extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -44,4 +44,4 @@ class HeroModal extends React.Component {
   }
 }
 
-export default HeroModal;
+export default CarpetCleaningQuote;

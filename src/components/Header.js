@@ -6,10 +6,10 @@ import {
   NavbarToggler,
   Nav,
   NavItem,
-  Container,
 } from "reactstrap";
 import { NavLink } from "react-router-dom";
 import vbcLogo from "../app/assets/img/vbcLogo.png";
+import OnlineBooking from "../features/booking/OnlineBooking";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -39,16 +39,12 @@ const Header = () => {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="nav-link" to="/">
-                Book Online
-              </NavLink>
-            </NavItem>
-            <NavItem>
               <NavLink className="nav-link" to="/contact">
                 Contact
               </NavLink>
             </NavItem>
           </Nav>
+          <OnlineBooking />
         </Collapse>
       </Navbar>
     </>

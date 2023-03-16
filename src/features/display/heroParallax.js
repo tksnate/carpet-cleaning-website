@@ -2,7 +2,7 @@ import { Parallax } from "react-parallax";
 import hero from "../../app/assets/img/1920.jpg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
-import HeroModal from "../quotes/CarpetCleaningQuote";
+import CarpetCleaningQuote from "../quotes/CarpetCleaningQuote";
 
 const HeroParallax = () => {
   return (
@@ -18,7 +18,7 @@ const HeroParallax = () => {
             <h2 className="img-txt">
               Experienced Professionals. Affordable Prices.
             </h2>
-            <HeroModal />
+            <CarpetCleaningQuote />
           </div>
         </div>
       </Parallax>
