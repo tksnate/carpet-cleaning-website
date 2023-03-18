@@ -9,21 +9,23 @@ const BookingDatePicker = () => {
 
   return (
     <>
-      <Row>
-        <Col xs={6}>
-          <p>Select Service Date:</p>
-        </Col>
-        <Col xs={6}>
-          <DatePicker
-            selected={selectedDate}
-            onChange={(date) => setselectedDate(date)}
-            minDate={addDays(new Date(), 2)}
-            maxDate={addDays(new Date(), 30)}
-            filterDate={(date) => date.getDay() !== 6 && date.getDay() !== 0}
-            isClearable
-          />
-        </Col>
-      </Row>
+      {/* <Row> */}
+      {/* <Col xs="12">Select Service Date</Col> */}
+      <Col>Select Service Date</Col>
+      <Col className="mb-3">
+        <DatePicker
+          selected={selectedDate}
+          onChange={(date) => setselectedDate(date)}
+          minDate={addDays(new Date(), 2)}
+          maxDate={addDays(new Date(), 30)}
+          filterDate={(date) => date.getDay() !== 6 && date.getDay() !== 0}
+          isClearable
+          // placeholderText="Click To Select A Date"
+          inline
+          required
+        />
+      </Col>
+      {/* </Row> */}
     </>
   );
 };

@@ -16,9 +16,9 @@ const BookingForm = () => {
         name: "",
         phoneNum: "",
         email: "",
-        when: "",
         where: "",
         quote: "",
+        when: "",
       }}
       onSubmit={handleSubmit}
       validate={validateContactForm}
@@ -67,20 +67,6 @@ const BookingForm = () => {
           </Col>
         </FormGroup>
         <FormGroup row>
-          <Label htmlFor="when" md="2" hidden>
-            When
-          </Label>
-          <Col md="10">
-            <Field
-              name="when"
-              as="textarea"
-              rows="2"
-              className="form-control"
-              placeholder="Date?  When would you like us to schedule service?  Tell us the days & times that work for you!"
-            />
-          </Col>
-        </FormGroup>
-        <FormGroup row>
           <Label htmlFor="where" md="2" hidden>
             Where
           </Label>
@@ -90,8 +76,11 @@ const BookingForm = () => {
               as="textarea"
               rows="2"
               className="form-control"
-              placeholder="Address?  Please tell us your service address and/or zip code"
+              placeholder="Address"
             />
+            <ErrorMessage name="where">
+              {(msg) => <p className="text-danger">{msg}</p>}
+            </ErrorMessage>
           </Col>
         </FormGroup>
         <FormGroup row>
@@ -102,13 +91,37 @@ const BookingForm = () => {
             <Field
               name="quote"
               as="textarea"
-              rows="12"
+              rows="8"
               className="form-control"
               placeholder="How can we help you? Please let us know all the rooms/areas you would like cleaned.  Include number of rooms, hallways, closets, stairs, and if any rooms need pet or deep stain treatment."
             />
           </Col>
         </FormGroup>
         <BookingDatePicker />
+        <FormGroup row>
+          <Col>
+            <div id="my-radio-group">Select Arrival Time</div>
+            <div role="group" aria-labelledby="my-radio-group">
+              <Label>
+                <Field
+                  type="radio"
+                  name="when"
+                  value="9"
+                  // className="form-control"
+                />{" "}
+                9-10 am
+              </Label>
+              <Label>
+                <Field type="radio" name="when" value="11" className="ms-4" />{" "}
+                11am-noon
+              </Label>
+              <Label>
+                <Field type="radio" name="when" value="1" className="ms-4" />{" "}
+                1-2pm
+              </Label>
+            </div>
+          </Col>
+        </FormGroup>
         <FormGroup row>
           <Col md={{ size: 10, offset: 2 }}>
             <Button type="submit" color="primary">

@@ -22,5 +22,9 @@ export const validateContactForm = (values) => {
     errors.email = "Required";
   }
 
+  if (!values.where) {
+    errors.where = "Required";
+  }
+
   return errors;
 };
