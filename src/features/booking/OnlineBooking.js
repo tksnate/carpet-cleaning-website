@@ -2,6 +2,8 @@ import React from "react";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import BookingForm from "../../components/BookingForm";
 import TestForm from "../../components/TestForm";
+import OldTestForm from "../../components/oldTestForm";
+import FormikContainer from "../../components/FormikContainer";
 
 class OnlineBooking extends React.Component {
   constructor(props) {
@@ -34,8 +36,8 @@ class OnlineBooking extends React.Component {
             Online Booking Form
           </ModalHeader>
           <ModalBody className="text-primary">
-            {/* <BookingForm /> */}
-            <TestForm />
+            {/* <FormikContainer /> */}
+            <BookingForm />
             CALL or TEXT if you have any questions before you schedule service!
             <br />
             <div className="mt-2">

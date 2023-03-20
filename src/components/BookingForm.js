@@ -2,6 +2,7 @@ import { Button, Label, Col, FormGroup } from "reactstrap";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import { validateContactForm } from "../utils/validateContactForm";
 import BookingDatePicker from "../features/booking/BookingDatePicker";
+import DatePicker from "./DatePicker";
 
 const BookingForm = () => {
   const handleSubmit = (values, { resetForm }) => {
@@ -19,15 +20,16 @@ const BookingForm = () => {
         where: "",
         quote: "",
         when: "",
+        cleaningDate: null,
       }}
       onSubmit={handleSubmit}
       validate={validateContactForm}
     >
       <Form>
         <FormGroup row>
-          <Label htmlFor="name" md="2" hidden>
+          {/* <Label htmlFor="name" md="2" hidden>
             Name
-          </Label>
+          </Label> */}
           <Col md="10">
             <Field name="name" placeholder="Name" className="form-control" />
             <ErrorMessage name="name">
@@ -36,9 +38,9 @@ const BookingForm = () => {
           </Col>
         </FormGroup>
         <FormGroup row>
-          <Label htmlFor="phoneNum" md="2" hidden>
+          {/* <Label htmlFor="phoneNum" md="2" hidden>
             Phone
-          </Label>
+          </Label> */}
           <Col md="10">
             <Field
               name="phoneNum"
@@ -51,9 +53,9 @@ const BookingForm = () => {
           </Col>
         </FormGroup>
         <FormGroup row>
-          <Label htmlFor="email" md="2" hidden>
+          {/* <Label htmlFor="email" md="2" hidden>
             Email
-          </Label>
+          </Label> */}
           <Col md="10">
             <Field
               name="email"
@@ -97,28 +99,27 @@ const BookingForm = () => {
             />
           </Col>
         </FormGroup>
-        <BookingDatePicker />
+        <DatePicker name="cleaningDate" />
         <FormGroup row>
-          <Col>
-            <div id="my-radio-group">Select Arrival Time</div>
-            <div role="group" aria-labelledby="my-radio-group">
-              <Label>
-                <Field
-                  type="radio"
-                  name="when"
-                  value="9"
-                  // className="form-control"
-                />{" "}
-                9-10 am
-              </Label>
-              <Label>
-                <Field type="radio" name="when" value="11" className="ms-4" />{" "}
-                11am-noon
-              </Label>
-              <Label>
-                <Field type="radio" name="when" value="1" className="ms-4" />{" "}
-                1-2pm
-              </Label>
+          <Col md="10">
+            <div className="form-control">
+              <div id="my-radio-group">Select Arrival Time</div>
+              <div role="group" aria-labelledby="my-radio-group">
+                <Label>
+                  <Field type="radio" name="when" value="9" /> 9-10 am
+                </Label>
+                <Label>
+                  <Field type="radio" name="when" value="11" className="ms-4" />{" "}
+                  11am-noon
+                </Label>
+                <Label>
+                  <Field type="radio" name="when" value="1" className="ms-4" />{" "}
+                  1-2pm
+                </Label>
+              </div>
+              <ErrorMessage name="when">
+                {(msg) => <p className="text-danger">{msg}</p>}
+              </ErrorMessage>
             </div>
           </Col>
         </FormGroup>

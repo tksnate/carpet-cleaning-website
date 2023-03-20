@@ -1,6 +1,7 @@
 import { Button, Label, Col, FormGroup } from "reactstrap";
 import { Formik, Field, Form, ErrorMessage } from "formik";
-import { validateContactForm } from "../utils/validateContactForm";
+import * as Yup from "yup";
+import TextError from "./TextError";
 
 const ContactForm = () => {
   const handleSubmit = (values, { resetForm }) => {
@@ -8,6 +9,15 @@ const ContactForm = () => {
     console.log("in JSON format:", JSON.stringify(values));
     resetForm();
   };
+
+  const validationSchema = Yup.object({
+    name: Yup.string().required("Required"),
+    phoneNum: Yup.number().required("Required"),
+    email: Yup.string().email("Invalid email format").required("Required"),
+    when: Yup.string().required("Required"),
+    where: Yup.string().required("Required"),
+    quote: Yup.string().required("Required"),
+  });
 
   return (
     <Formik
@@ -20,39 +30,35 @@ const ContactForm = () => {
         quote: "",
       }}
       onSubmit={handleSubmit}
-      validate={validateContactForm}
+      validationSchema={validationSchema}
     >
       <Form>
         <FormGroup row>
-          <Label htmlFor="name" md="2" hidden>
-            Name
-          </Label>
           <Col md="10">
             <Field name="name" placeholder="Name" className="form-control" />
-            <ErrorMessage name="name">
-              {(msg) => <p className="text-danger">{msg}</p>}
-            </ErrorMessage>
+            <ErrorMessage name="name" component={TextError} />
           </Col>
         </FormGroup>
         <FormGroup row>
-          <Label htmlFor="phoneNum" md="2" hidden>
+          {/* <Label htmlFor="phoneNum" md="2" hidden>
             Phone
-          </Label>
+          </Label> */}
           <Col md="10">
             <Field
               name="phoneNum"
               placeholder="Phone Number"
               className="form-control"
             />
-            <ErrorMessage name="phoneNum">
+            {/* <ErrorMessage name="phoneNum">
               {(msg) => <p className="text-danger">{msg}</p>}
-            </ErrorMessage>
+            </ErrorMessage> */}
+            <ErrorMessage name="phoneNum" component={TextError} />
           </Col>
         </FormGroup>
         <FormGroup row>
-          <Label htmlFor="email" md="2" hidden>
+          {/* <Label htmlFor="email" md="2" hidden>
             Email
-          </Label>
+          </Label> */}
           <Col md="10">
             <Field
               name="email"
@@ -60,15 +66,16 @@ const ContactForm = () => {
               placeholder="Email"
               className="form-control"
             />
-            <ErrorMessage name="email">
+            {/* <ErrorMessage name="email">
               {(msg) => <p className="text-danger">{msg}</p>}
-            </ErrorMessage>
+            </ErrorMessage> */}
+            <ErrorMessage name="email" component={TextError} />
           </Col>
         </FormGroup>
         <FormGroup row>
-          <Label htmlFor="when" md="2" hidden>
+          {/* <Label htmlFor="when" md="2" hidden>
             When
-          </Label>
+          </Label> */}
           <Col md="10">
             <Field
               name="when"
@@ -77,12 +84,13 @@ const ContactForm = () => {
               className="form-control"
               placeholder="Date?  When would you like us to schedule service?  Tell us the days & times that work for you!"
             />
+            <ErrorMessage name="when" component={TextError} />
           </Col>
         </FormGroup>
         <FormGroup row>
-          <Label htmlFor="where" md="2" hidden>
+          {/* <Label htmlFor="where" md="2" hidden>
             Where
-          </Label>
+          </Label> */}
           <Col md="10">
             <Field
               name="where"
@@ -91,20 +99,19 @@ const ContactForm = () => {
               className="form-control"
               placeholder="Address?  Please tell us your service address and/or zip code"
             />
+            <ErrorMessage name="where" component={TextError} />
           </Col>
         </FormGroup>
         <FormGroup row>
-          <Label htmlFor="quote" md="2" hidden>
-            Quote Details
-          </Label>
           <Col md="10">
             <Field
               name="quote"
               as="textarea"
-              rows="12"
+              rows="8"
               className="form-control"
               placeholder="How can we help you? Please let us know all the rooms/areas you would like cleaned.  Include number of rooms, hallways, closets, stairs, and if any rooms need pet or deep stain treatment."
             />
+            <ErrorMessage name="quote" component={TextError} />
           </Col>
         </FormGroup>
         <FormGroup row>
