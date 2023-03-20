@@ -69,9 +69,9 @@ const BookingForm = () => {
           </Col>
         </FormGroup>
         <FormGroup row>
-          <Label htmlFor="where" md="2" hidden>
+          {/* <Label htmlFor="where" md="2" hidden>
             Where
-          </Label>
+          </Label> */}
           <Col md="10">
             <Field
               name="where"
@@ -86,9 +86,9 @@ const BookingForm = () => {
           </Col>
         </FormGroup>
         <FormGroup row>
-          <Label htmlFor="quote" md="2" hidden>
+          {/* <Label htmlFor="quote" md="2" hidden>
             Quote Details
-          </Label>
+          </Label> */}
           <Col md="10">
             <Field
               name="quote"

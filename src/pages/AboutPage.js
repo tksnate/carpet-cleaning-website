@@ -7,12 +7,14 @@ import {
   CardHeader,
   CardImg,
   CardText,
+  CardTitle,
   ListGroup,
   ListGroupItem,
 } from "reactstrap";
 import SubHeader from "../components/SubHeader";
 import PartnersList from "../features/partners/PartnersList";
 import satisfaction from "../app/assets/img/satisfaction-guarantee.png";
+import ratedBiz from "../app/assets/img/ratedBiz.png";
 
 const AboutPage = () => {
   return (
@@ -53,69 +55,63 @@ const AboutPage = () => {
           </Card>
         </Col>
         <Col sm="5" className="justify-content-md-center">
-          <Card className="border-0">
+          <img
+            src={satisfaction}
+            alt="cleaning service satisfaction guarantee"
+            style={{
+              width: "400px",
+              display: "block",
+              margin: "auto",
+              // height: "auto",
+              // alignContent: "center",
+              //not sure how to center this pic
+            }}
+          />
+          {/* <Card className="border-0">
             <CardImg
               alt="cleaning service satisfaction guarantee"
               src={satisfaction}
               // width="100%"
               className="aboutPic"
             />
-            {/* <CardHeader className="bg-primary text-white">
-              <h3>Our Promises</h3>
-            </CardHeader>
-            <CardBody>
-              <ul className="row">
-                <span className="listStyle text-primary">
-                  <li>We treat our customers as we want to be treated</li>
-                  <li>We will always operate with Honesty and Integrity</li>
-                  <li>We are committed to complete customer satisfaction!</li>
-                </span>
-              </ul>
-              <h6 className="listTwo">
-                We honor your business by using only experienced and dedicated
-                professionals to serve your cleaning needs.{" "}
-                <span className="bold">
-                  These superstars are the real reason you should choose
-                  Valley's Best Carpet Cleaning!
-                </span>
-              </h6>
-            </CardBody> */}
-          </Card>
+          </Card> */}
         </Col>
+      </Row>
+      <Row className="row-content mt-3">
         <Col>
-          <Card className="bg-warning mt-3">
-            <CardBody>
-              <blockquote className="blockquote">
-                <p>
-                  "These guys are amazing! We had them do house cleaning AND
-                  carpet cleaning and now everything looks great! Very
-                  professional and affordable. Highly recommend."
-                </p>
-                <footer className="blockquote-footer text-primary">
-                  Maggie S,{"   "}
-                  <cite title="Source Title">
-                    5-Star Google Customer Review
-                  </cite>
-                </footer>
-              </blockquote>
+          <Card color="warning" outline>
+            <CardHeader className="text-primary bold fs-3 text-center">
+              5-Star Google Customer Review
+            </CardHeader>
+            <CardBody className="bg-warning">
+              <CardTitle tag="h5">
+                {" "}
+                "These guys are amazing! We had them do house cleaning AND
+                carpet cleaning and now everything looks great!
+                <span className="bold">
+                  {" "}
+                  Very professional and affordable.
+                </span>{" "}
+                Highly recommend."
+              </CardTitle>
+              <CardText className="text-light">
+                Maggie S. 5-Star Review - House Cleaning & Carpet Cleaning
+                Services
+              </CardText>
             </CardBody>
           </Card>
         </Col>
       </Row>
-      <Row className="row-content">
-        <Col sm="6">
-          <h3>We are the Affordable Cleaning Experts!</h3>
-          <span className="checkMark">
-            <ul className="row">
-              <li>Residential & Commercial Cleaning</li>
-              <li>Experienced Professionals</li>
-              <li>Easy Scheduling</li>
-              <li>BBB Accredited and Insured</li>
-              <li>Hundreds of 5-Star Reviews</li>
-              <li>Satisfaction Guaranteed</li>
-              <li>Flexible Offers For Every Situation</li>
-            </ul>
-          </span>
+      <Row className="row-content mt-5">
+        <Col sm="5" className="justify-content-md-center">
+          <Card className="border-0">
+            <CardImg
+              alt="cleaning service satisfaction guarantee"
+              src={ratedBiz}
+              // width="100%"
+              className="aboutPic"
+            />
+          </Card>
         </Col>
         <Col sm="6">
           <Card>
@@ -138,25 +134,6 @@ const AboutPage = () => {
                   Valley's Best Carpet Cleaning!
                 </span>
               </h6>
-            </CardBody>
-          </Card>
-        </Col>
-        <Col>
-          <Card className="bg-warning mt-3">
-            <CardBody>
-              <blockquote className="blockquote">
-                <p>
-                  "These guys are amazing! We had them do house cleaning AND
-                  carpet cleaning and now everything looks great! Very
-                  professional and affordable. Highly recommend."
-                </p>
-                <footer className="blockquote-footer text-primary">
-                  Maggie S,{"   "}
-                  <cite title="Source Title">
-                    5-Star Google Customer Review
-                  </cite>
-                </footer>
-              </blockquote>
             </CardBody>
           </Card>
         </Col>

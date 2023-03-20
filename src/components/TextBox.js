@@ -34,14 +34,6 @@ const TextBox = () => {
             margin: "auto",
           }}
         />
-        {/* <Card>
-          <CardImg
-            width={200}
-            style={{ height: "auto" }}
-            src={coupon2}
-            alt="Carpet Cleaning Coupon Discount Phoenix, AZ"
-          />
-        </Card> */}
       </Col>
       <Col xs="12" className="text-center text-primary mt-4">
         <h5 className="mx-2 mb-4">
