@@ -40,25 +40,17 @@ const ContactForm = () => {
           </Col>
         </FormGroup>
         <FormGroup row>
-          {/* <Label htmlFor="phoneNum" md="2" hidden>
-            Phone
-          </Label> */}
           <Col md="10">
             <Field
               name="phoneNum"
               placeholder="Phone Number"
               className="form-control"
             />
-            {/* <ErrorMessage name="phoneNum">
-              {(msg) => <p className="text-danger">{msg}</p>}
-            </ErrorMessage> */}
+
             <ErrorMessage name="phoneNum" component={TextError} />
           </Col>
         </FormGroup>
         <FormGroup row>
-          {/* <Label htmlFor="email" md="2" hidden>
-            Email
-          </Label> */}
           <Col md="10">
             <Field
               name="email"
@@ -66,23 +58,17 @@ const ContactForm = () => {
               placeholder="Email"
               className="form-control"
             />
-            {/* <ErrorMessage name="email">
-              {(msg) => <p className="text-danger">{msg}</p>}
-            </ErrorMessage> */}
             <ErrorMessage name="email" component={TextError} />
           </Col>
         </FormGroup>
         <FormGroup row>
-          {/* <Label htmlFor="when" md="2" hidden>
-            When
-          </Label> */}
           <Col md="10">
             <Field
               name="when"
               as="textarea"
               rows="2"
               className="form-control"
-              placeholder="Date?  When would you like us to schedule service?  Tell us the days & times that work for you!"
+              placeholder="Date?  When would you like us to schedule service?"
             />
             <ErrorMessage name="when" component={TextError} />
           </Col>
@@ -109,7 +95,7 @@ const ContactForm = () => {
               as="textarea"
               rows="8"
               className="form-control"
-              placeholder="How can we help you? Please let us know all the rooms/areas you would like cleaned.  Include number of rooms, hallways, closets, stairs, and if any rooms need pet or deep stain treatment."
+              placeholder="How can we help you? Please let us know all the rooms/areas you would like cleaned."
             />
             <ErrorMessage name="quote" component={TextError} />
           </Col>

@@ -25,18 +25,26 @@ const ContactPage = () => {
           </p>
         </Col>
         <Col className="align-self-center">
-          <Card color="warning" outline>
-            <CardBody>
-              <h5 className="text-primary bold">CALL: 602-699-4822</h5>
+          <Card className="bg-primary">
+            <CardBody className="text-light">
+              <h5>
+                <span className="text-warning bold">CALL:</span> 602-699-4822
+              </h5>
               <br />
-              <h5 className="text-primary bold">TEXT: 623-277-6461</h5>
+              <h5>
+                <span className="text-warning bold">TEXT:</span> 623-277-6461
+              </h5>
               <br />
+
               <a
                 role="button"
-                className="btn btn-link"
+                className="btn-link text-light"
                 href="mailto:info@valleysbestcleaners.com"
               >
-                <i className="fa fa-envelope-o" /> info@valleysbestcleaners.com
+                <h5>
+                  <span className="text-warning bold">EMAIL:</span>{" "}
+                  info@valleysbestcleaners.com{" "}
+                </h5>
               </a>
             </CardBody>
           </Card>
@@ -44,7 +52,7 @@ const ContactPage = () => {
       </Row>
       <Row className="row-content">
         <Col xs="12">
-          <h2>Send Us Your Feedback</h2>
+          <h2>How Can We Serve Your Cleaning Needs?</h2>
           <hr />
         </Col>
         <Col md="10">

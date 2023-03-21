@@ -1,28 +1,48 @@
-import { Card, CardImg, CardText, CardBody, Col, Button } from "reactstrap";
+import {
+  Card,
+  CardImg,
+  CardText,
+  CardBody,
+  CardTitle,
+  Col,
+  Container,
+  Row,
+} from "reactstrap";
+import ContactForm from "../../components/ContactForm";
 
 const ServiceDetail = ({ campsite }) => {
-  const { image, name, description } = campsite;
+  const { image, name, description, description2 } = campsite;
 
   return (
-    <Col className="m-1">
-      <Card>
-        <CardImg top src={image} alt={name} />
-        <CardBody>
-          <CardText>{description}</CardText>
-          <Button size="lg" color="primary">
-            {" "}
-            <a
-              role="button"
-              className="btn btn-link text-warning text-xl bold"
-              href="mailto:info@valleysbestcleaners.com"
-            >
-              {" "}
-              Contact us for a free quote today!
-            </a>
-          </Button>
-        </CardBody>
-      </Card>
-    </Col>
+    <Container>
+      <Row>
+        <Col className="m-1">
+          <Card>
+            <CardImg top src={image} alt={name} />
+            <CardTitle>
+              <h1 class="display-2 text-center">{name}</h1>
+            </CardTitle>
+            <CardBody>
+              <CardText className="lead lh-lg text-primary">
+                {description}
+              </CardText>
+              <CardText className="lead lh-lg text-primary">
+                {description2}
+              </CardText>
+            </CardBody>
+          </Card>
+        </Col>
+      </Row>
+      <Row className="row-content">
+        <Col xs="12">
+          <h2>How Can We Serve Your Cleaning Needs?</h2>
+          <hr />
+        </Col>
+        <Col md="10">
+          <ContactForm />
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

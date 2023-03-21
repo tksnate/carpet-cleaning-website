@@ -11,7 +11,9 @@ export const SERVICES = [
     //  elevation: 1233,
     featured: false,
     description:
-      "Experienced Carpet Cleaning Professionals!  We use truck-mounted steam cleaning machines to perform the cleaning and stain removal service, with no residue left-behind!  Our standard cleaning includes a stain removal pre-treatment and rinse deodorizer.  Our award-winning carpet cleaning service has hundreds of 5-star reviews from customers that love the way we clean!",
+      "Experienced Carpet Cleaning Professionals!  We use truck-mounted steam cleaning machines to perform the cleaning and stain removal service, with no residue left-behind!",
+    description2:
+      "Our standard cleaning includes a stain removal pre-treatment and rinse deodorizer.  Our award-winning carpet cleaning service has hundreds of 5-star reviews from customers that love the way we clean!",
   },
   {
     id: 1,
