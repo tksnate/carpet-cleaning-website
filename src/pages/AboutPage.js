@@ -23,8 +23,8 @@ const AboutPage = () => {
         current="About"
         curHead="Why Choose Valley's Best Carpet Cleaning?"
       />
-      <Row className="row-content">
-        <Col sm="7">
+      <Row className="row-content justify-content-center">
+        <Col lg="7" xs="12">
           <Card>
             <CardHeader className="bg-primary text-white">
               <h3>We are the Affordable Cleaning Experts!</h3>
@@ -54,27 +54,16 @@ const AboutPage = () => {
             </CardBody>
           </Card>
         </Col>
-        <Col sm="5" className="justify-content-md-center">
+        <Col className="align-self-center">
           <img
             src={satisfaction}
             alt="cleaning service satisfaction guarantee"
             style={{
-              width: "400px",
+              width: "300px",
               display: "block",
               margin: "auto",
-              // height: "auto",
-              // alignContent: "center",
-              //not sure how to center this pic
             }}
           />
-          {/* <Card className="border-0">
-            <CardImg
-              alt="cleaning service satisfaction guarantee"
-              src={satisfaction}
-              // width="100%"
-              className="aboutPic"
-            />
-          </Card> */}
         </Col>
       </Row>
       <Row className="row-content mt-3">
@@ -103,7 +92,7 @@ const AboutPage = () => {
         </Col>
       </Row>
       <Row className="row-content mt-5">
-        <Col sm="5" className="justify-content-md-center">
+        {/* <Col sm="5" className="justify-content-md-center">
           <Card className="border-0">
             <CardImg
               alt="cleaning service satisfaction guarantee"
@@ -112,8 +101,19 @@ const AboutPage = () => {
               className="aboutPic"
             />
           </Card>
+        </Col> */}
+        <Col lg="4" xs="12" className="align-self-center">
+          <img
+            src={ratedBiz}
+            alt="BBB Accredited Business"
+            style={{
+              width: "300px",
+              display: "block",
+              margin: "auto",
+            }}
+          />
         </Col>
-        <Col sm="6">
+        <Col className="align-self-center">
           <Card>
             <CardHeader className="bg-primary text-white">
               <h3>Our Promises</h3>
@@ -137,12 +137,6 @@ const AboutPage = () => {
             </CardBody>
           </Card>
         </Col>
-      </Row>
-      <Row className="row-content">
-        <Col xs="12">
-          <h3>Community Partners</h3>
-        </Col>
-        <PartnersList />
       </Row>
     </Container>
   );
