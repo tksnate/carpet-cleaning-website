@@ -5,14 +5,10 @@ import {
   Card,
   CardBody,
   CardHeader,
-  CardImg,
   CardText,
   CardTitle,
-  ListGroup,
-  ListGroupItem,
 } from "reactstrap";
 import SubHeader from "../components/SubHeader";
-import PartnersList from "../features/partners/PartnersList";
 import satisfaction from "../app/assets/img/satisfaction-guarantee.png";
 import ratedBiz from "../app/assets/img/ratedBiz.png";
 
@@ -92,16 +88,6 @@ const AboutPage = () => {
         </Col>
       </Row>
       <Row className="row-content mt-5">
-        {/* <Col sm="5" className="justify-content-md-center">
-          <Card className="border-0">
-            <CardImg
-              alt="cleaning service satisfaction guarantee"
-              src={ratedBiz}
-              // width="100%"
-              className="aboutPic"
-            />
-          </Card>
-        </Col> */}
         <Col lg="4" xs="12" className="align-self-center">
           <img
             src={ratedBiz}
