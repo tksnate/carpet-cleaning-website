@@ -1,7 +1,7 @@
 export const COMMENTS = [
   {
     id: 0,
-    campsiteId: 0,
+    serviceId: 0,
     rating: 5,
     text: "The grass was indeed greener here than our last campsite.",
     author: "Simon Hunt",
@@ -9,7 +9,7 @@ export const COMMENTS = [
   },
   {
     id: 1,
-    campsiteId: 0,
+    serviceId: 0,
     rating: 3,
     text: "This lone monkey kept following us back to our tent.",
     author: "Zandra Katherine",
@@ -17,7 +17,7 @@ export const COMMENTS = [
   },
   {
     id: 2,
-    campsiteId: 0,
+    serviceId: 0,
     rating: 4,
     text: "Do not feed the wildlife. They will follow you back to the tent.",
     author: "Amy Keophilavong",
@@ -25,7 +25,7 @@ export const COMMENTS = [
   },
   {
     id: 3,
-    campsiteId: 0,
+    serviceId: 0,
     rating: 3,
     text: "Avoid Sundays; couldn't relax and play my flute with all the noisy kids.",
     author: "Jean Luc",
@@ -33,7 +33,7 @@ export const COMMENTS = [
   },
   {
     id: 4,
-    campsiteId: 0,
+    serviceId: 0,
     rating: 5,
     text: "This has been our favorite campsite for over 7 years. It is an absolutely beautiful site. The hosts are very friendly and helpful. Don't forget to try out the lake.",
     author: "R. E. Osariemen",
@@ -41,7 +41,7 @@ export const COMMENTS = [
   },
   {
     id: 5,
-    campsiteId: 1,
+    serviceId: 1,
     rating: 4,
     text: "There's nothing more fun than setting up a tent in a rainstorm.",
     author: "Juan Cortez",
@@ -49,7 +49,7 @@ export const COMMENTS = [
   },
   {
     id: 6,
-    campsiteId: 1,
+    serviceId: 1,
     rating: 5,
     text: "I caught a world-record-breaking trout here on my last visit.",
     author: "McKenzie Sebastian",
@@ -57,7 +57,7 @@ export const COMMENTS = [
   },
   {
     id: 7,
-    campsiteId: 1,
+    serviceId: 1,
     rating: 5,
     text: "The campground was beautiful, but the bugs could bite sometimes.",
     author: "Brennen Ech",
@@ -65,7 +65,7 @@ export const COMMENTS = [
   },
   {
     id: 8,
-    campsiteId: 1,
+    serviceId: 1,
     rating: 4,
     text: "Love the river but I didn't catch any fish.",
     author: "Amy Keophilavong",
@@ -73,7 +73,7 @@ export const COMMENTS = [
   },
   {
     id: 9,
-    campsiteId: 1,
+    serviceId: 1,
     rating: 5,
     text: "A wonderful place to reconnect with nature.",
     author: "Jordan Runn",
@@ -81,7 +81,7 @@ export const COMMENTS = [
   },
   {
     id: 10,
-    campsiteId: 2,
+    serviceId: 2,
     rating: 5,
     text: "The Frozen Tundra is great place for family and friends camping!",
     author: "Olaf the Snowman",

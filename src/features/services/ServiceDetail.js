@@ -10,8 +10,8 @@ import {
 } from "reactstrap";
 import ContactForm from "../../components/ContactForm";
 
-const ServiceDetail = ({ campsite }) => {
-  const { image, name, description, description2 } = campsite;
+const ServiceDetail = ({ service }) => {
+  const { image, name, description, description2 } = service;
 
   return (
     <Container>
@@ -35,7 +35,7 @@ const ServiceDetail = ({ campsite }) => {
       </Row>
       <Row className="row-content">
         <Col xs="12">
-          <h2>How Can We Serve Your Cleaning Needs?</h2>
+          <h2>Get A Service Quote Today!</h2>
           <hr />
         </Col>
         <Col md="10">

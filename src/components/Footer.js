@@ -1,12 +1,14 @@
 import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
+import OnlineBooking from "../features/booking/OnlineBooking";
+import ScheduleService from "../features/booking/ScheduleServices";
 
 const Footer = () => {
   return (
     <footer className="site-footer">
       <Container>
         <Row>
-          <Col xs="12" sm="4" className="text-center mb-5">
+          <Col xs="12" sm="4" className="text-center mb-5 text-warning">
             <h4 className="text-white">Valley's Best Carpet Cleaning</h4>
             <small>
               Professional Cleaning Services in Phoenix, AZ and most surrounding
@@ -53,11 +55,6 @@ const Footer = () => {
                   Contact
                 </Link>
               </li>
-              <li>
-                <Link to="/contact" className="text-warning">
-                  Book Online
-                </Link>
-              </li>
             </ul>
             <a
               role="button"
@@ -76,9 +73,7 @@ const Footer = () => {
             </a>
           </Col>
           <Col sm={{ size: 3, offset: 1 }} className="text-center">
-            <Link to="/contact" className="text-warning">
-              Schedule Service
-            </Link>
+            <ScheduleService />
             <br />
             <br />
             <small className="text-white">
