@@ -13,7 +13,6 @@ const ServiceDetailPage = () => {
       <SubHeader current={service.name} detail={true} />
       <Row>
         <ServiceDetail service={service} />
-        {/* <CommentsList serviceId={serviceId} /> */}
       </Row>
     </Container>
   );

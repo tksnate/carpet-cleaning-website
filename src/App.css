@@ -206,6 +206,12 @@ h2 {
   .checkMark {
     font-size: large;
   }
+  .carousel {
+    display: none;
+  }
+  #reviewCar {
+    display: block !important;
+  }
 }
 
 .customerTestomial {
@@ -262,4 +268,13 @@ select {
 
 .form-control {
   margin-bottom: 20px;
+}
+
+.carousel-item > img {
+  width: 100%;
+}
+
+.carousel-item,
+.carousel-item.active {
+  align-items: center;
 }
