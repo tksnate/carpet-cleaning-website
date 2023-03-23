@@ -60,10 +60,10 @@ function ReviewCarousel(args) {
         key={item.src}
       >
         <img src={item.src} alt={item.altText} />
-        <CarouselCaption
+        {/* <CarouselCaption
           captionText={item.caption}
           captionHeader={item.caption}
-        />
+        /> */}
       </CarouselItem>
     );
   });
@@ -75,11 +75,11 @@ function ReviewCarousel(args) {
       previous={previous}
       {...args}
     >
-      <CarouselIndicators
+      {/* <CarouselIndicators
         items={items}
         activeIndex={activeIndex}
         onClickHandler={goToIndex}
-      />
+      /> */}
       {slides}
       <CarouselControl
         direction="prev"

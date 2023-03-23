@@ -22,15 +22,11 @@ const ServiceDetail = ({ service }) => {
           <Card className="mb-5 pb-2">
             <CardImg top src={image} alt={name} />
             <CardTitle>
-              <h1 class="display-2 text-center">{name}</h1>
+              <h1 class="display-2 text-center text-primary">{name}</h1>
             </CardTitle>
             <CardBody>
-              <CardText className="lead lh-lg text-primary">
-                {description}
-              </CardText>
-              <CardText className="lead lh-lg text-primary">
-                {description2}
-              </CardText>
+              <CardText className="lead base">{description}</CardText>
+              <CardText className="lead base">{description2}</CardText>
             </CardBody>
           </Card>
         </Col>
