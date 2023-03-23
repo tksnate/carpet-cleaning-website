@@ -8,6 +8,7 @@ import {
 } from "reactstrap";
 import reviewCar3 from "../app/assets/img/reviewCar3.jpg";
 import reviewCar from "../app/assets/img/reviewCar.jpg";
+import reviewCar2 from "../app/assets/img/reviewCar2.jpg";
 
 const items = [
   {
@@ -22,12 +23,12 @@ const items = [
     caption: "Slide 2",
     key: 2,
   },
-  //   {
-  //     src: reviewPic,
-  //     altText: "Slide 3",
-  //     caption: "Slide 3",
-  //     key: 3,
-  //   },
+  {
+    src: reviewCar2,
+    altText: "Slide 3",
+    caption: "Slide 3",
+    key: 3,
+  },
 ];
 
 function ReviewCarousel(args) {
