@@ -1,6 +1,7 @@
 import { Card, Container, Col, Row, CardBody } from "reactstrap";
 import SubHeader from "../components/SubHeader";
 import ContactForm from "../components/ContactForm";
+import AwardRow from "../components/Awards";
 
 const ContactPage = () => {
   return (
@@ -49,6 +50,9 @@ const ContactPage = () => {
             </CardBody>
           </Card>
         </Col>
+      </Row>
+      <Row className="row-content">
+        <AwardRow />
       </Row>
       <Row className="row-content">
         <Col xs="12">
