@@ -33,7 +33,6 @@ const DatePicker = (props) => {
                   isClearable
                   required
                   placeholderText="Select Appointment Date"
-                  width={100}
                 />
               );
             }}
