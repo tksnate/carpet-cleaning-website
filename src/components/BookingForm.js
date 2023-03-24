@@ -99,7 +99,9 @@ const BookingForm = () => {
             />
           </Col>
         </FormGroup>
-        <DatePicker name="cleaningDate" />
+        <Col md="10">
+          <DatePicker name="cleaningDate" md="10" />
+        </Col>
         <FormGroup row>
           <Col md="10">
             <div className="form-control">

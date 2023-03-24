@@ -131,11 +131,6 @@ h2 {
 
 .reviewImage {
   max-width: 75%;
-  /* min-width: 50%; */
-  /* height: auto; */
-  /* align-items: center;
-  align-content: center; */
-  /* margin-top: 50px; */
 }
 
 .homeText {
@@ -152,10 +147,8 @@ h2 {
 .listStyle {
   font-style: italic;
   font-size: larger;
-  /* color: darkred; */
   font-weight: 500;
   line-height: 2em;
-  /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
 }
 
 .listTwo {
@@ -205,16 +198,9 @@ h2 {
 @media (max-width: 767px) {
   .content {
     display: flex;
-
-    /* position: absolute; */
-    /* height: 50vh; */
-    /* width: 100%; */
     margin-top: 55px;
     margin-left: 20px;
     margin-right: 20px;
-    /* margin-bottom: 50px; */
-    /* justify-content: center;
-    align-items: center; */
   }
   .navbar-brand img {
     display: none;
@@ -260,15 +246,14 @@ input + label {
 }
 
 input[type="text"],
-/* input[type="email"], */
 input[type="password"],
 textarea,
 select {
   display: block;
-  width: 400px;
+  width: 380px;
   padding: 6px 12px;
-  font-size: 14px;
-  line-height: 1.42857143;
+  font-size: 16px;
+  line-height: 2;
   color: #555;
   background-color: #fff;
   background-image: none;
